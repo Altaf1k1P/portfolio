@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #007acc;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    section {
+      padding: 20px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .projects article {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <main>
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm Altaf Khan, a passionate MERN stack developer from Rajasthan, India. I love creating web applications and solving coding challenges.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <!-- Project 1 -->
+        <article>
+          <h3>Full-Stack Blogging Platform</h3>
+          <picture>
+            <source srcset="/img/Screenshot 2024-12-31 170924.png" type="image/webp">
+            <img src="/img/Screenshot 2024-12-31 170924.png" alt="Screenshot of Todo App" width="100%">
+          </picture>
+          <p>Developed a MERN stack application allowing users to create, edit, and manage blog posts.
+
+            Implemented authentication using JWT for secure login.
+            
+            Utilized Redux for state management and React Router for navigation.
+            
+            Integrated MongoDB for database management.
+            
+            Used Cloudinary and Multer for image uploads.
+            
+            Styled the frontend using Tailwind CSS for clean and responsive UI</p>
+        </article>
+
+        <!-- Project 2 -->
+        <article>
+          <h3>todo App</h3>
+          <picture>
+            <source srcset="todo-app.webp" type="image/webp">
+            <img src="todo-app.jpg" alt="Screenshot of todo App" width="100%">
+          </picture>
+          <p>A simple and responsive todo list application to manage tasks efficiently.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <details>
+          <summary>Click to reveal contact details</summary>
+          <p>Email: altaf@example.com</p>
+          <p>Phone: +91-123-456-7890</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Altaf Khan. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
