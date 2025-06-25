@@ -1,67 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Altaf Khan | Portfolio</title> <!-- You forgot the title, I added one -->
-  <link rel="stylesheet" href="style.css"> <!-- External CSS linked -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio #09 | AsmrProg</title>
 </head>
+
 <body>
 
-  <!-- Navigation Bar -->
-  <nav>
-    <div class="container">
-      <a href="#" class="navbar-brand">
-        <img src="img/logo.PNG" alt="Logo" class="logo">
-      </a>
-      <div class="navbar-list">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a href="#about">About</a></li>
-          <li class="nav-item"><a href="#education">Education</a></li>
-          <li class="nav-item"><a href="#skill">Skills</a></li>
-          <li class="nav-item"><a href="#project">Projects</a></li>
-          <li class="nav-item"><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+    <nav class="navbar">
+
+        <!-- <a href="#" class="navbar__logo"><i class="ri-code-s-slash-line"></i> Logo.</a> -->
+        <a href="#" class="navbar__logo"><img src="img/logo.PNG" alt="logo"></a>
+
+        <div class="navbar__menu">
+            <a href="#home" class="navbar__link">Home</a>
+            <a href="#project" class="navbar__link">Projects</a>
+            <a href="#skills" class="navbar__link">Skills</a>
+            <a href="#about" class="navbar__link">About</a>
+        </div>
+
+        <div class="navbar__actions">
+            <div class="navbar__location">
+                <h5>India, IST</h5>
+                 <p id="india-time">Loading...</p>
+            </div>
+            <a href="https://wa.me/917737796872" class="btn">Get a Quote</a>
+        </div>
+
+    </nav>
+
+    <section class="hero-section" id="home">
+        <div class="hero-content">
+            <h1>
+                Bringing Ideas to Life with Code.
+            </h1>
+            <p>
+                I'm Altaf Khan, a web developer focused on creating
+                intuitive, fast, and beautiful digital experiences.
+                Specialized in the MERN stack and front-end development.
+            </p>
+            <a href="#contact" class="btn btn--secondary">Contact Me</a>
+            <a href="#project" class="btn">View Projects</a>
+        </div>
+        <div class="hero-banner">
+            <img src="img/hero-banner.webp" alt="Hero Banner"> <!-- Hero image -->
+        </div>
+        <div class="hero__socials">
+            <a href="https://www.instagram.com/the.altafkhann?igsh=N2VpcHAzbjhwZmI4&utm_source=qr"><i class="ri-instagram-line"></i></a>
+            <a href="https://dribbble.com/altaf-khan"><i class="ri-dribbble-line"></i></a>
+            <a href="https://www.linkedin.com/in/altaf-khan-b39772330/"><i class="ri-linkedin-box-line"></i></a>
+            <a href="https://github.com/Altaf1k1P"><i class="ri-github-line"></i></a>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+
+        <div class="skills__desc">
+            <h3>Experienced Across Multiple Projects and Technologies</h3>
+            <p>Bringing creativity and technical proficiency to building responsive web applications and enhancing user
+                experiences.</p>
+
+            <div class="skills__actions">
+                <button class="btn">Work With Me</button>
+                <button class="btn btn--secondary">Send Email</button>
+            </div>
+        </div>
+
+        <div class="skills__stats">
+            <i class="ri-github-line"></i>
+            <div class="skill__info">
+                <h5>5+</h5>
+                <p>JavaScript Projects</p>
+            </div>
+            <i class="ri-reactjs-line"></i>
+            <div class="skill__info">
+                <h5>3+</h5>
+                <p>Remote Projects</p>
+            </div>
+            <div class="skill__info">
+                <h5>30+</h5>
+                <p>Projects repo</p>
+            </div>
+            <i class="ri-rocket-line"></i>
+            <div class="skill__info">
+                <h5>8+</h5>
+                <p>React Projects</p>
+            </div>
+            <i class="ri-remote-control-line"></i>
+        </div>
+
+    </section>
+
+    <section class="showcase" id="project">
+
+        <div class="showcase__header">
+            <h3>I Can Help You With:</h3>
+            <button class="btn">See My Work</button>
+        </div>
+
+        <div class="showcase_categories">
+            <section class="category">
+                <div class="category__header">
+                    <div class="category__title">
+                        <i class="ri-macbook-line"></i>
+                        <h4>MERN STACK Websites</h4>
+                    </div>
+                    <div class="category__desc">
+                        <p>Leveraging my MERN stack skills to build responsive, impactful websites that not only
+                            showcase my projects but also reflect my passion for solving real-world problems through
+                            clean, efficient code.</p>
+                        <a href="#"><i class="ri-share-circle-line"></i></a>
+                    </div>
+                </div>
+
+                <div class="category__projects">
+                    <div class="project-card">
+                        <img src="assets/item-1.png" alt="Portfolio 1" class="project-card__image">
+                        <div class="project-card__info">
+                            <h5>BOOK-REVIEW-SYSTEM</h5>
+                            <p>JUNE 2025</p>
+                        </div>
+                        <p class="project-card__desc">A dynamic Book Review System where users can browse, review, and
+                            rate books, while admins manage book listings. Features include authentication, search, and
+                            responsive UI for seamless user experience.</p>
+                        <a class="btn" href="https://book-store-nu-eight.vercel.app/" target="_blank">View Live Demo</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="assets/item-2.png" alt="Portfolio 2" class="project-card__image">
+                        <div class="project-card__info">
+                            <h5>CAFE-WEBSITE</h5>
+                            <p>May 2025</p>
+                        </div>
+                        <p class="project-card__desc">A modern cafe website built using HTML, CSS, and JavaScript
+                            featuring an interactive menu, outlet gallery, and mobile-friendly responsive design using
+                            local JSON data and Context API.</p>
+                        <a class="btn" href="https://cafe-template-git-main-altaf1k1ps-projects.vercel.app/"
+                            target="_blank">View Live Demo</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="assets/item-3.png" alt="Portfolio 3" class="project-card__image">
+                        <div class="project-card__info">
+                            <h5>TECH-BLOG PLATFORM</h5>
+                            <p>December 2024</p>
+                        </div>
+                        <p class="project-card__desc">A full-stack blog platform where users can create, update, and
+                            delete posts. Includes JWT authentication, user-based permissions, and a clean, responsive
+                            UI built with EJS and Node.js.</p>
+                        <a class="btn" href="https://blogweb-1-05pe.onrender.com/" target="_blank">View Live Demo</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="assets/item-4.png" alt="Portfolio 4" class="project-card__image">
+                        <div class="project-card__info">
+                            <h5>EXPENSE-TRACKER APP</h5>
+                            <p>August 2023</p>
+                        </div>
+                        <p class="project-card__desc">A responsive expense tracker application built with React,
+                            featuring income/expense management, chart visualizations, and localStorage integration for
+                            tracking financial habits.</p>
+                        <a class="btn" href="https://cashflow-omega-eight.vercel.app/" target="_blank">View Live
+                            Demo</a>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <section class="category">
+                <div class="category__header">
+                    <div class="category__title">
+                        <i class="ri-group-2-line"></i>
+                        <h4>Website Development</h4>
+                    </div>
+                    <div class="category__desc">
+                        <p>End-to-end development of responsive websites that look great on all devices, with a focus on
+                            performance and aesthetics.</p>
+                        <a href="#"><i class="ri-share-circle-line"></i></a>
+                    </div>
+                </div>
+
+                <div class="category__projects">
+                    <div class="project-card">
+                        <img src="assets/item-5.png" alt="NFT Landing" class="project-card__image">
+                        <div class="project-card__info">
+                            <h5>NFT Landing</h5>
+                            <p>August 2023</p>
+                        </div>
+                        <p class="project-card__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Sit autem soluta consequatur, sequi
+                            et sint laudantium non rem veritatis.</p>
+                        <button class="btn">View Live Demo</button>
+                    </div>
+                    <div class="project-card">
+                        <img src="assets/item-6.png" alt="Music Platform" class="project-card__image">
+                        <div class="project-card__info">
+                            <h5>Music Platform</h5>
+                            <p>August 2023</p>
+                        </div>
+                        <p class="project-card__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Sit autem soluta consequatur, sequi
+                            et sint laudantium non rem veritatis.</p>
+                        <button class="btn">View Live Demo</button>
+                    </div>
+                    <div class="project-card">
+                        <img src="assets/item-7.png" alt="Crypto Market" class="project-card__image">
+                        <div class="project-card__info">
+                            <h5>Crypto Market</h5>
+                            <p>August 2023</p>
+                        </div>
+                        <p class="project-card__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Sit autem soluta consequatur, sequi
+                            et sint laudantium non rem veritatis.</p>
+                        <button class="btn">View Live Demo</button>
+                    </div>
+                    <div class="project-card">
+                        <img src="assets/item-8.png" alt="Jobs Platform" class="project-card__image">
+                        <div class="project-card__info">
+                            <h5>Jobs Platform</h5>
+                            <p>August 2023</p>
+                        </div>
+                        <p class="project-card__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Sit autem soluta consequatur, sequi
+                            et sint laudantium non rem veritatis.</p>
+                        <button class="btn">View Live Demo</button>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+    </section>
+
+   <section class="career" id="career">
+    <div class="career__jobs">
+        <h3>Education</h3>
+        <div class="job">
+            <i class="ri-graduation-cap-line"></i>
+            <div class="job__info">
+                <h5>Bachelor of Computer Applications at <span>Pacific University, Udaipur</span></h5>
+                <p>July 2021 – June 2024</p>
+            </div>
+        </div>
+        <div class="job">
+            <i class="ri-school-line"></i>
+            <div class="job__info">
+                <h5>Higher Secondary School at <span>Rajasthan Board (RBSE)</span></h5>
+                <p>April 2019 – May 2021</p>
+            </div>
+        </div>
+        <div class="job">
+            <i class="ri-school-line"></i>
+            <div class="job__info">
+                <h5>Secondary School at <span>Rajasthan Board (RBSE)</span></h5>
+                <p>April 2017 – March 2019</p>
+            </div>
+        </div>
     </div>
-  </nav>
 
-  <!-- Main Content -->
-  <main>
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="hero-content">
-        <h1 class="hero-title">
-          Bringing Ideas to <span id="code">Life with Code</span>
-        </h1>
-        <p class="hero-description">
-          I'm Altaf Khan, a web developer focused on creating 
-          intuitive, fast, and beautiful digital experiences.
-          Specialized in the MERN stack and front-end development.
-        </p>
-        <a href="#contact" class="btn btn-secondary">Contact Me</a>
-        <a href="#project" class="btn">View Projects</a>
-      </div>
-      <div class="hero-banner">
-        <img src="img/hero-banner.webp" alt="Hero Banner"> <!-- Hero image -->
-      </div>
-    </section>
+    <div class="career__awards">
+        <h3>Skills & Certifications</h3>
+        <div class="award">
+            <div>
+                <i class="ri-code-s-slash-line"></i>
+                <div class="award__info">
+                    <h5>Full-Stack Web Development with <span>MERN Stack</span></h5>
+                    <p> – June 2024</p>
+                </div>
+            </div>
+            <!-- <a href="#"><i class="ri-external-link-line"></i></a> -->
+        </div>
+        <div class="award">
+            <div>
+                <i class="ri-reactjs-line"></i>
+                <div class="award__info">
+                    <h5>JavaScript & React.js <span>Advanced Workshop</span></h5>
+                    <p> March 2024</p>
+                </div>
+            </div>
+            <!-- <a href="#"><i class="ri-external-link-line"></i></a> -->
+        </div>
+        <div class="award">
+            <div>
+                <i class="ri-brush-line"></i>
+                <div class="award__info">
+                    <h5>UI/UX Design Basics with <span>Figma</span></h5>
+                    <!-- <p>Certified – January 2024</p> -->
+                </div>
+            </div>
+            <!-- <a href="#"><i class="ri-external-link-line"></i></a> -->
+        </div>
+    </div>
+</section>
 
-    <!-- About Section -->
-    <section class="about-section" id="about">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <p class="section-description">
-          Hello! I'm Altaf Khan, a passionate and dedicated Web Developer from Dungarpur, Rajasthan.
-          I completed my Bachelor’s degree in Computer Applications (BCA) from Pacific University, Udaipur.  
-          I specialize in building dynamic and responsive web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js). 
-          I enjoy transforming ideas into real-world digital solutions and am constantly learning new technologies to enhance my skills.
-          When I’m not coding, I love exploring new tech trends and working on side projects.
-          I'm excited to start my professional journey and contribute to innovative teams and projects.
-        </p>
-      </div>
-    </section>
-  </main>
+
+   <section class="contact" id="contact">
+  <h5>Got a Project?</h5>
+  <h2>Let's Work Together!</h2>
+
+  <form class="contact__form" action="https://formspree.io/f/xzzgkenw" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+
+  <p>Phone: <span>
+      <a href="https://wa.me/917737796872" target="_blank" style="text-decoration: none; color: inherit;">
+      +91 7737796872
+    </a>
+  </span></p>
+</section>
+
+
+    <footer class="footer">
+        <div class="footer__brand">
+            <a href="#" style="line-height: 0.6;"><pre>StackFlow 
+<small style="font-size: 10px;">by Altaf</small>
+            </pre></a>
+           <p>© 2024 Altaf Khan Portfolio. All rights reserved.</p>
+        </div>
+        <div class="footer__links">
+            <a href="#home">Home</a>
+            <a href="#project">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#about">About</a>
+        </div>
+    </footer>
+
+ <script>
+  // India time update
+  function updateIndiaTime() {
+    const options = {
+      timeZone: 'Asia/Kolkata',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: true
+    };
+    const indiaTime = new Intl.DateTimeFormat('en-US', options).format(new Date());
+    document.getElementById('india-time').textContent = indiaTime;
+  }
+
+  updateIndiaTime();
+  setInterval(updateIndiaTime, 1000);
+
+  // Handle contact form submission and clear on success
+  const contactForm = document.querySelector('.contact__form');
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(contactForm);
+
+      try {
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          contactForm.reset();
+        //   alert("Message sent successfully!");
+        } else {
+          alert("Oops! Something went wrong.");
+        }
+      } catch (error) {
+        alert("Error sending form.");
+      }
+    });
+  }
+</script>
 
 </body>
+
 </html>
